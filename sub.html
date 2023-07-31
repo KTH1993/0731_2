@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="css/sub.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style>
+        section {
+            width: 1230px;
+            height: 970px;
+            margin: 0 auto;
+        }
+
+        section > #imgbox {
+            width: 665px;
+            height: 705px;
+            float: left;
+        }
+
+        section > #imgbox > .little-image{
+            width:90px;
+            height: 90px;
+            margin:90px 0 0 0px;
+            float: left;
+        }
+
+        section> #imgbox >.big-image{
+            width: 530px;
+            height: 530px;
+            margin: 90px 0 0 0px;
+            float: left;
+        }
+
+        section > #textbox {
+            width: 565px;
+            height: 735px;
+            float: left;
+            background-color: beige;
+        }
+
+        
+        .bar {
+            display: inline-block;
+            width: 60px;
+            height: 10px;
+            background-color: aqua;
+        }
+
+        section > #textbox > .head {
+            margin: 90px 0 0 0px;
+            border-bottom: 1px solid black;
+        }
+        section > #textbox > .head > dt {
+            margin:0 0 30px 0px;
+        }
+
+        section > #textbox > .head > dt > h3{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        section > #textbox > .head > dt > h4{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        section > #textbox > .head > dt > h4:after{
+            content: "8,890원";
+            font-size: 16px;
+            color: rgb(136,136,136);
+            text-decoration: line-through;
+            font-weight:normal;
+            
+        }
+        section > #textbox > .body{
+            background-color: tomato;
+            height: 50px;
+        }
+        section > #textbox > .body > dt {
+            float: left;
+            margin-right: 70px;
+            width: 70px;
+            font-size: 14px;
+            height: 20px;
+            background-color: aqua;
+        }
+        section > #textbox > .body > dd{
+            background-color: gold;
+            color: rgb(136,136,136);
+
+        }
+
+        section > #textbox > .quantity-box{
+            width: 565px;
+            height: 110px;
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+        section > #textbox > .quantity-box > h3{
+            padding:25px 0 0 30px;
+            font-size:17px;
+        }
+        section > #textbox > .quantity-box > h3:after{
+            content:"쿠폰적용";
+            background-color: black;
+            color: white;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+        section > #textbox > .quantity-box > h4 {
+            float: right;
+            margin-right: 32px;
+        }
+
+        section > #textbox > #total-product{
+            width: 565px;
+            height: 70px;
+            border-bottom: 1px solid #EDEDED;
+            background-color: white;
+
+        }
+        section > #textbox > #total-product > dt{
+            float: left;
+            margin-right: 370px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        section > #textbox > #total-product > dd{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-weight: bold;
+            color: #EDEDED;
+            font-size: 14px;
+        }
+
+        section > #textbox > #total-price {
+            width: 565px;
+            height: 75px;
+            background-color: darkcyan;
+        }
+
+        section > #textbox > #total-price > dt{
+            float: left;
+            margin-right: 370px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        section > #textbox > #total-price > dd{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .menu
+        {
+            height: 65px;
+            width: 1230px;
+            background-color: rgba(10, 10, 131, 0.596);
+            margin: 0 auto;
+        }
+
+        #product {
+            width: 1230px;
+            height: 12000px;
+            background-color: aquamarine;
+            margin:0 auto;
+        }
+        #product > h3{
+            display:inline-block;
+            padding:50px 0 0 0px;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #product > img {
+            margin: 45px 145px 0px 145px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#"><img src="img/logo.jpg" alt="로고"></a>
+        </div>
+
+        <div id="iconbox">
+            <div class="imgbox">
+                <a href="#"><img src="img/search.png" alt="검색"></a>
+            </div>
+
+            <div class="imgbox">
+                <a href="#"><img src="img/shoppingbag.png" alt="장바구니"></a>
+            </div>
+
+            <div class="imgbox">
+                <a href="#"><img src="img/menubutton.png" alt="메뉴"></a>
+            </div>
+
+        </div>
+
+        <div id="login">
+            <ul>
+                <li>
+                    <a href="#">회원가입</a>
+                </li>
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">마이페이지</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">STORY</a>
+                </li>
+                <li>
+                    <a href="#">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="#">EVENT</a>
+                </li>
+                <li>
+                    <a href="#">COMMUNTY</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id = "imgbox">
+            <div class = "little-image">
+            <img src="img/product_image_big.jpg" alt ="제품이미지">
+        </div>
+        <div class = "big-image">
+            <img src="img/product_image_big.jpg" alt ="제품이미지">
+        </div>
+        </div>
+        <div id = "textbox">
+            <dl class="head">
+                <dt><h3>아미고 나쵸칩 1,000g</h3></dt>
+                <dt><h4>8,980원</h4></dt>
+            </dl>
+
+            <dl class="body">
+                <dt>구매제한</dt>
+                <dd>옵션당 최소 1개</dd>
+            </dl>
+
+            <dl class="body">
+                <dt>배송비</dt>
+                <dd>3000원 /주문시결제(선결제)</dd>
+                <dt></dt>
+                <dd>택배</dd>
+
+            </dl>
+
+            <dl class="body">
+                <dt>상품코드</dt>
+                <dd>1000000030</dd>
+            </dl>
+
+            <div class = "quantity-box">
+                <h3>아미고 나쵸칩 1000g</h3>
+                <h4>8,980원</h4>
+            </div>
+
+            <dl id="total-product">
+                <dt>총 상품금액</dt>
+                <dd>8,980원</dd>
+            </dl>
+
+            <dl id="total-price">
+                <dt>총 합계금액</dt>
+                <dd>8,980원</dd>
+            </dl>
+
+            <div id="iconbox">
+                <img src=""
+            </div>
+
+
+        </div>
+    </section>
+    <div class="menu">
+    </div>
+    <div id="product">
+        <h3>상품상세정보</h3>
+        <img src="img/product_detail.jpg" alt="상품상세설명">
+    </div>
+    <div class="menu">
+    </div>
+    <footer>
+        <div id="company-info-wrap">
+            <div id="company-info">
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer-info-wrap">
+            <dl>
+                <dt>Company Info</dt>
+                <dd>
+                    <p>
+                        (주)래딕스글로비즈<span class="bar"></span>대표자 : 조명희<span class="bar"></span>주소 : 서울특별시 마포구 마포대로 86 (창강빌딩) 8층<br>
+                        개인정보관리책임자 : 석주한<span class="bar"></span>
+                        <a href="#">사업자번호 : 104-81-41772</a><br>
+                        통신판매업신고번호 : 제2015-서울마포-1869호<br>
+                        T. 02-703-2915<span class="bar"></span> F. 02-703-0327<span class="bar"></span>E.
+                        <a href="mailTo:khj@radixg.com">khj@radixg.com</a><br>
+                        호스팅사업자 : 엔에이치엔커머스(주)
+                    </p>
+                    <address>&copy;2022 ㈜래딕스글로비즈 All Rights Reserved.</address>  
+
+                    
+                </dd>
+            </dl>
+            
+            
+
+            <dl>
+                <dt>Bank Info</dt>
+                <dd>
+                    <p>우리은행 1005501050587</p>
+                    <p>예금주 : (주)래딕스글로비즈</p>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Cs Center</dt>
+                <dd>
+                    <strong>02-703-2915</strong>
+                    <p>평일 : AM09:00 - PM18:00 (주말 및 공휴일 휴무)
+                        <br>점심 : PM12:00 - PM13:00
+                    </p>
+                </dd>
+            </dl>
+
+        </div>
+    </footer>
+</body>
+</html>
